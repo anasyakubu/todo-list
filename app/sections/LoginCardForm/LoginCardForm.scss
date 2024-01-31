@@ -1,6 +1,10 @@
 .LoginCardForm {
   .btn {
     transition: 0.4s;
+
+    &:hover {
+      transform: scale(0.9);
+    }
   }
 }
 
