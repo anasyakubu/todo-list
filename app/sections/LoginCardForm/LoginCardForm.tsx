@@ -13,7 +13,7 @@ const LoginCardForm = () => {
     <div className="LoginCardForm">
       <div className="text-left">
         <div className="">
-          <h2 className="text-xl font-semibold">Login into your Account</h2>
+          <h2 className="text-xl font-semibold">Login into Your Account</h2>
         </div>
         {/* flex items-center space-x-1 rtl:space-x-reverse
          flex items-center space-x-1 rtl:space-x-reverse */}

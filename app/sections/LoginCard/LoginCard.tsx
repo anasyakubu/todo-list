@@ -6,7 +6,7 @@ import Avater from "../../../public/img_avatar3.png";
 
 const LoginCard = () => {
   return (
-    <div className="LoginCard rounded-xl shadow-sm flex flex-col justify-between">
+    <div className="LoginCard rounded-xl shadow-sm flex flex-col justify-between bg-gray-900">
       <div className="m-5 p-5">
         <div className="logo">
           <Image src={TSOneLogo} className="img" alt="TASK MANAGER" />
