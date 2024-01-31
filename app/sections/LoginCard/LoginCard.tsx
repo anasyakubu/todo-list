@@ -3,6 +3,7 @@ import "./LoginCard.scss";
 import Image from "next/image";
 import TSOneLogo from "../../../public/tm-white-t.png";
 import Avater from "../../../public/img_avatar3.png";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 const LoginCard = () => {
   return (
@@ -22,7 +23,13 @@ const LoginCard = () => {
           </p>
           <div className="mt-20 flex items-center space-x-1 rtl:space-x-reverse">
             <div className="">
-              <Image src={Avater} alt="User" className="rounded-full w-12" />
+              <SignedIn>
+                {" "}
+                <UserButton afterSignOutUrl="/" />
+              </SignedIn>
+              <SignedOut>
+                <Image src={Avater} alt="User" className="rounded-full w-12" />
+              </SignedOut>
             </div>
             <div className="pl-5">
               <p className="p-0 m-0">Anas Yakubu</p>

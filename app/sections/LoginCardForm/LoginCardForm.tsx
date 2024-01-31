@@ -3,28 +3,48 @@
 // import React from "react";
 import React, { useState } from "react";
 import "./LoginCardForm.scss";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
-import GoogleLogo from "../../../public/google.png";
-import GithubLogo from "../../../public/287725_github_icon.svg";
+// import GoogleLogo from "../../../public/google.png";
+// import GithubLogo from "../../../public/287725_github_icon.svg";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 const LoginCardForm = () => {
   return (
     <div className="LoginCardForm">
       <div className="text-left">
         <div className="">
-          <h2 className="text-xl font-semibold">Login into Your Account</h2>
+          <SignedIn>
+            <h2 className="text-xl font-semibold">Welcome Back 😁</h2>
+          </SignedIn>
+          <SignedOut>
+            <h2 className="text-xl font-semibold">Get Started</h2>
+          </SignedOut>
         </div>
         {/* flex items-center space-x-1 rtl:space-x-reverse
          flex items-center space-x-1 rtl:space-x-reverse */}
         <div className="">
-          <button
-            className="w-full btn bg-white text-sm text-gray-900 font-medium p-2 flex justify-center mt-3 text-center 
+          <SignedIn>
+            <Link
+              href="/Todo"
+              className="w-full btn bg-white text-sm text-gray-900 font-medium p-2 flex justify-center mt-3 text-center 
            rounded-lg"
-          >
-            {/* <Image src={GoogleLogo} alt="Google" className="w-5" /> */}
-            <span className="ml-5">Get Started</span>
-          </button>
+            >
+              {/* <Image src={GoogleLogo} alt="Google" className="w-5" /> */}
+              <span className="ml-5">Continue</span>
+            </Link>
+          </SignedIn>
+
+          <SignedOut>
+            <Link
+              href="/sign-in"
+              className="w-full btn bg-white text-sm text-gray-900 font-medium p-2 flex justify-center mt-3 text-center 
+           rounded-lg"
+            >
+              {/* <Image src={GoogleLogo} alt="Google" className="w-5" /> */}
+              <span className="ml-5">Login into Your Account</span>
+            </Link>
+          </SignedOut>
           {/* <button
             className="w-full bg-white text-sm text-gray-900 font-medium flex justify-center p-2 text-center mt-3 
            rounded-lg"
