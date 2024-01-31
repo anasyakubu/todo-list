@@ -1,20 +1,20 @@
-// // Import the functions you need from the SDKs you need
-// import { initializeApp } from "firebase/app";
-// // TODO: Add SDKs for Firebase products that you want to use
-// // https://firebase.google.com/docs/web/setup#available-libraries
-// import { getFirestore } from "firebase/firestore";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore } from "firebase/firestore";
 
-// // Your web app's Firebase configuration
-// const firebaseConfig = {
-//   apiKey: "AIzaSyB0lUyk5W0zXZ412tt0KtOSgtGQJoSvkfM",
-//   authDomain: "first-crud-f85ea.firebaseapp.com",
-//   projectId: "first-crud-f85ea",
-//   storageBucket: "first-crud-f85ea.appspot.com",
-//   messagingSenderId: "1008847585948",
-//   appId: "1:1008847585948:web:5f1e6bd10d5b2691f4e359",
-// };
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyB0lUyk5W0zXZ412tt0KtOSgtGQJoSvkfM",
+  authDomain: "first-crud-f85ea.firebaseapp.com",
+  projectId: "first-crud-f85ea",
+  storageBucket: "first-crud-f85ea.appspot.com",
+  messagingSenderId: "1008847585948",
+  appId: "1:1008847585948:web:5f1e6bd10d5b2691f4e359",
+};
 
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-// export const db = getFirestore(app);
+export const db = getFirestore(app);
