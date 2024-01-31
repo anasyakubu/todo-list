@@ -1,10 +1,14 @@
-// .LoginCardForm{}
+.LoginCardForm {
+  .btn {
+    transition: 0.4s;
+  }
+}
 
 @media (max-width: 600px) {
-  .LoginCardForm{
+  .LoginCardForm {
     padding-top: 0;
     margin-top: 0;
-    
+
     button {
       padding: 2%;
       display: flex;

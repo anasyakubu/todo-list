@@ -19,11 +19,11 @@ const LoginCardForm = () => {
          flex items-center space-x-1 rtl:space-x-reverse */}
         <div className="">
           <button
-            className="w-full bg-white text-sm text-gray-900 font-medium p-2 flex justify-center mt-3 text-center 
+            className="w-full btn bg-white text-sm text-gray-900 font-medium p-2 flex justify-center mt-3 text-center 
            rounded-lg"
           >
             {/* <Image src={GoogleLogo} alt="Google" className="w-5" /> */}
-            <span className="ml-5">Continue with Google</span>
+            <span className="ml-5">Get Started</span>
           </button>
           {/* <button
             className="w-full bg-white text-sm text-gray-900 font-medium flex justify-center p-2 text-center mt-3 
