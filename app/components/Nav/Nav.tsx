@@ -19,7 +19,7 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white">
+    <div className="bg-White">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
@@ -44,31 +44,31 @@ export default function Example() {
           <div className="hidden lg:flex lg:gap-x-12">
             <Link
               href="/"
-              className="text-sm font-semibold leading-6 text-white"
+              className="text-sm font-semibold leading-6 text-black"
             >
               Home
             </Link>
             <Link
               href="/"
-              className="text-sm font-semibold leading-6 text-white"
+              className="text-sm font-semibold leading-6 text-black"
             >
               About
             </Link>
             <Link
               href="/"
-              className="text-sm font-semibold leading-6 text-white"
+              className="text-sm font-semibold leading-6 text-black"
             >
               Features
             </Link>
             <Link
               href="/"
-              className="text-sm font-semibold leading-6 text-white"
+              className="text-sm font-semibold leading-6 text-black"
             >
               Blog
             </Link>
             <Link
               href="/"
-              className="text-sm font-semibold leading-6 text-white"
+              className="text-sm font-semibold leading-6 text-black"
             >
               Contact
             </Link>
@@ -89,7 +89,7 @@ export default function Example() {
           onClose={() => setMobileMenuOpen(false)}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>

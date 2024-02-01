@@ -26,7 +26,7 @@ const LoginCardForm = () => {
         <div className="">
           <SignedIn>
             <Link
-              href="/Todo"
+              href="/Dashboard"
               className="w-full btn bg-white text-sm text-gray-900 font-medium p-2 flex justify-center mt-3 text-center 
            rounded-lg"
             >
