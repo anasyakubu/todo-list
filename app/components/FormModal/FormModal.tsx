@@ -96,7 +96,7 @@ const MyModal = () => {
               </button>
               <button
                 type="submit"
-                className="inline-block px-4 py-2 text-sm font-medium text-white bg-primary border rounded-md hover:bg-primary-600 focus:outline-none focus:ring focus:border-blue-300"
+                className="inline-block px-4 py-2 text-sm font-medium text-gray-700 bg-primary border rounded-md hover:bg-primary-600 focus:outline-none focus:ring focus:border-blue-300"
               >
                 Submit
               </button>
